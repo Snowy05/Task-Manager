@@ -1,0 +1,114 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; 
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333; 
+    margin-top: 20px;
+}
+
+
+/* Menu CSS  */
+
+.menu-container {
+    width: 100%;
+    background-color: #333;
+    text-align: center; 
+}
+
+.nav-bar {
+    padding: 30px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px; 
+    background-color: #444; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.nav-bar ul li a:hover {
+    background-color: #777; 
+}
+
+/* Menu CSS END */
+
+/* Footer CSS */
+
+/* Footer container */
+.footer-container {
+    width: 100%;
+    background-color: #333; 
+    text-align: center;
+    color: #fff; 
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Footer text */
+.footer-container footer p {
+    margin: 0;
+}
+
+/* Footer CSS END*/
+
+/* Registration CSS */
+
+/* Registration container */
+.register-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Input fields */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+/* Submit button */
+.register-container .submit-bttn button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-container .submit-bttn button:hover {
+    background-color: #555; /
+}
+
+/* Registration CSS END */
