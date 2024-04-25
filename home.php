@@ -8,11 +8,10 @@
         <?php include 'importphp/menu.php'; ?>
 </head>
 <body>
-<div>
-
+<div class="picture-wrapper-one">
+<img src="pictures/" alt="picture">
 </div>
-
-
+<img src='' alt="dwa">
     <?php include 'importphp/footer.php'; ?>
 </body>
 </html>
