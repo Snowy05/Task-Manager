@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css" />
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 490px)"/>
+    <title>Document</title>
         <?php include 'importphp/menu.php'; ?>
 </head>
 <body>
-<div>
-
-</div>
 
 
     <?php include 'importphp/footer.php'; ?>

@@ -28,13 +28,13 @@
         }
     }
     ?>
-    <div class="register-container">
+    <div class="credential-container">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="register-container-top">
+            <div class="credential-container-top">
                 First Name: <input type="text" name="firstName" required><br>
                 Last Name: <input type="text" name="lastName" required><br>
             </div>
-            <div class="register-container-bottom">
+            <div class="credential-container-bottom">
                 Email: <input type="email" name="email" required><br>
                 Password: <input type="password" name="password" required><br>
             </div>

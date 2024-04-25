@@ -75,7 +75,7 @@ h1 {
 /* Registration CSS */
 
 /* Registration container */
-.register-container {
+.credential-container {
     width: 50%;
     margin: 0 auto;
     background-color: #fff;
@@ -85,9 +85,9 @@ h1 {
 }
 
 /* Input fields */
-.register-container input[type="text"],
-.register-container input[type="email"],
-.register-container input[type="password"] {
+.credential-container input[type="text"],
+.credential-container input[type="email"],
+.credential-container input[type="password"] {
     width: calc(100% - 20px);
     margin-bottom: 10px;
     padding: 10px;
@@ -96,7 +96,7 @@ h1 {
 }
 
 /* Submit button */
-.register-container .submit-bttn button {
+.credential-container .submit-bttn button {
     width: 100%;
     padding: 10px;
     background-color: #333; 
@@ -107,7 +107,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.register-container .submit-bttn button:hover {
+.credential-container .submit-bttn button:hover {
     background-color: #555; /
 }
 
