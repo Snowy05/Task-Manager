@@ -106,9 +106,91 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.cred-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 .credential-container .submit-bttn button:hover {
     background-color: #555; /
 }
 
 /* Registration CSS END */
+/* Manage Page */
+
+/* Task manager container */
+.manage-content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Individual task container */
+.manage-content-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add task container */
+.add-task-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.add-task-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-task-container input[type="text"],
+.add-task-container input[type="date"],
+.add-task-container select,
+.add-task-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-task-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task-container button:hover {
+    background-color: #555;
+}
+
+/* Edit and delete buttons */
+.manage-content-item form button {
+    width: 20%;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 2px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.manage-content-item form button:hover {
+    background-color: #555;
+}
+/* Manage Page END */

@@ -8,7 +8,8 @@
     <?php include 'importphp/menu.php'; ?>
 </head>
 <body>
-    <h1>Login</h1>
+    <div class='cred-wrapper'>
+            <h1>Login</h1>
     <div class="credential-container">
         <form action="login_process.php" method="post">
             Email: <input type="email" name="email" required><br>
@@ -18,6 +19,9 @@
              </div>
         </form>
     </div>
+    </div>
+    
+
     <?php include 'importphp/footer.php'; ?>
 
 </body>

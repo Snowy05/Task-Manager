@@ -8,7 +8,7 @@
     <?php include 'importphp/menu.php'; ?>
 </head>
 <body>
-
+<div class='cred-wrapper'>
 <h1>User Registration</h1>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -43,7 +43,7 @@
                 </div>
         </form>
     </div>
-   
+</div>   
  <?php include 'importphp/footer.php'; ?>
 </body>
 </html>
