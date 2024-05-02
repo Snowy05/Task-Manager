@@ -4,10 +4,7 @@
     <ul>
         <img class="logo-img" src="images/Logo2.png" alt="logo picture">
         <li><a href="index.php">Home</a></li>
-        <li><a href="profile.php">Profile</a></li>
-        <li><a href="manage.php">Manage</a></li>
-        <li><a href="index.php">Logout</a></li>
-
+        <li><a href="about-us.php">About Us</a></li>
     </ul>
 </nav>
 </div>

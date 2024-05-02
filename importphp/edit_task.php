@@ -14,7 +14,7 @@ if (isset($_POST['edit_task'])) {
     // Check if task_id is set in the POST request
     if (!isset($_POST['task_id'])) {
         // Redirect back with an error message
-        $_SESSION['task_error'] = "Task ID not provided.";
+        $_SESSION['task_error'] = "Task ID was not provided.";
         header("Location: ../manage.php");
         exit();
     }

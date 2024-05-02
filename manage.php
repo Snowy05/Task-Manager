@@ -22,7 +22,7 @@ $result = mysqli_query($conn, $query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css" />
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 490px)"/>
-    <?php include 'importphp/menu.php'; ?>
+    <?php include 'importphp/profile_menu.php'; ?>
 </head>
 <body>
     <h1>Task Manager</h1>
