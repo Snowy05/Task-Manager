@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 620px)">
-    <link rel="icon" href="images/Logo2.png" type="image/png">
+    <link rel="icon" href="images/webpicture002.jpeg" type="image/png">
+
     <?php include 'importphp/menu-index.php'; ?>
+    <title>Home</title>
 </head>
 <body>
 <div class="space-wrapper">

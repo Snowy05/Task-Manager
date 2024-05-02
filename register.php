@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css" />
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 620px)"/>
+    <link rel="icon" href="images/webpicture002.jpeg" type="image/png">
     <?php include 'importphp/menu.php'; ?>
+    <title>Register</title>
 </head>
 <body>
 <div class='space-wrapper'>
@@ -21,12 +23,15 @@
         $password = mysqli_real_escape_string($conn, $_POST['password']);
         $hashed_password = hash('sha256', $password); 
 
-        $query = "INSERT INTO Users (FirstName, LastName, Email, PasswordHash) VALUES ('$firstName', '$lastName', '$email', '$hashed_password')";
-        if (mysqli_query($conn, $query)) {
-            echo "Registered successfully!";
-        } else {
-            echo "Error: " . mysqli_error($conn);
-        }
+            $query = "INSERT INTO Users (FirstName, LastName, Email, PasswordHash) VALUES ('$firstName', '$lastName', '$email', '$hashed_password')";
+        if (mysqli_query($conn, $query)) 
+        {
+            echo '<div style="background-color: #dff0d8; color: #3c763d; padding: 10px; border-radius: 5px; max-width: 300px; margin: 0 auto; text-align: center;">Registered successfully!</div>';
+        } 
+         else 
+         {
+                echo '<div style="background-color: #f2dede; color: #a94442; padding: 10px; border-radius: 5px; max-width: 300px; margin: 0 auto; text-align: center;">Error: ' . mysqli_error($conn) . '</div>';
+         }
     }
     ?>
     <div class="credential-container">
