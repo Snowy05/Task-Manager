@@ -19,6 +19,7 @@
                 not only help you manage your time  but helps you to organise your 
                 upcoming events!
             </p>
+            <p>If you join us you will not only be able to add tasks, but edit and delete them as well! What else can anyone ask for?</p>
             <p><i>We believe that the smallest problem is ManageAble</i></p>
             <img src="images/webpicture002.jpeg" alt="about us picture">
     </div>

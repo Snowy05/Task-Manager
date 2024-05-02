@@ -25,9 +25,9 @@ $result = mysqli_query($conn, $query);
     <title>Manager</title>
 </head>
 <body>
-    <div class='space-wrapper'>
-        <h1>Task Manager</h1>
-            
+    <div class='space-wrapper'>        
+                        <h1>Welcome, <?php echo $_SESSION['user_name']; ?>!</h1>
+
             <div class="manage-content-container">
                 <?php while ($row = mysqli_fetch_assoc($result)) : ?>
                     <div class="manage-content-item">

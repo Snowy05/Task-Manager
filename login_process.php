@@ -14,7 +14,7 @@ if (mysqli_num_rows($result) == 1) {
     $_SESSION['logged_in'] = true;
     $_SESSION['user_id'] = $user['UserID'];
     $_SESSION['user_name'] = $user['FirstName']; 
-    header("Location: profile.php");
+    header("Location: manage.php");
     exit();
 } else {
     $_SESSION['login_error'] = "Invalid email or password";
