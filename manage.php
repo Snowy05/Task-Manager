@@ -21,7 +21,7 @@ $result = mysqli_query($conn, $query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css" />
-    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 490px)"/>
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 620px)"/>
     <?php include 'importphp/profile_menu.php'; ?>
 </head>
 <body>

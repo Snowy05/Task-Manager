@@ -24,7 +24,7 @@ h1 {
 .logo-img {
     width: 40px; 
     height: auto; 
-    position: fixed;
+    position: absolute;
     left: 20px;
     transform: translateY(-50%); 
 }
@@ -61,15 +61,19 @@ h1 {
 
 /* Footer CSS */
 
-/* Footer container */
 .footer-container {
     width: 100%;
     background-color: #333; 
     text-align: center;
     color: #fff; 
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+    position: relative; 
+    margin-top: auto; 
+}
+.space-wrapper {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Footer text */
@@ -81,7 +85,6 @@ h1 {
 
 /* Registration CSS */
 
-/* Registration container */
 .credential-container {
     width: 50%;
     margin: 0 auto;
@@ -91,7 +94,6 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Input fields */
 .credential-container input[type="text"],
 .credential-container input[type="email"],
 .credential-container input[type="password"] {
@@ -102,7 +104,6 @@ h1 {
     border-radius: 5px;
 }
 
-/* Submit button */
 .credential-container .submit-bttn button {
     width: 100%;
     padding: 10px;
@@ -128,14 +129,12 @@ h1 {
 /* Registration CSS END */
 /* Manage Page */
 
-/* Task manager container */
 .manage-content-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
-/* Individual task container */
 .manage-content-item {
     background-color: #fff;
     padding: 20px;
@@ -143,7 +142,6 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add task container */
 .add-task-container {
     background-color: #fff;
     padding: 20px;
@@ -182,7 +180,6 @@ h1 {
     background-color: #555;
 }
 
-/* Edit and delete buttons */
 .manage-content-item form button {
     width: 20%;
     padding: 5px;
@@ -196,7 +193,6 @@ h1 {
     transition: background-color 0.3s;
 }
 
-/* Hover effect */
 .manage-content-item form button:hover {
     background-color: #555;
 }
@@ -280,21 +276,6 @@ h1 {
 
 .about-us-container i {
     color: #999;
-}
-
-/* mobile.css */
-
-.about-us-container img {
-    max-width: 90%;
-}
-
-.about-us-container h1 {
-    font-size: 24px;
-}
-
-.about-us-container p {
-    font-size: 14px;
-    margin-bottom: 15px;
 }
 
 /* About us End */

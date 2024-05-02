@@ -1,0 +1,74 @@
+   /* Menu CSS */
+   .nav-bar ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.logo-img {
+    width: 20px; 
+    left: 0;
+    top: 15px;
+}
+
+.nav-bar ul li {
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.nav-bar ul li a {
+    display: block;
+    padding: 12px 0; 
+    text-align: center; 
+    font-size: 16px; 
+}
+
+    /* Manage Page */
+    .manage-content-item form button {
+        width: 30%;
+        padding: 5px;
+    }
+
+    /* Home */
+    .index-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-section,
+    .new-here-section {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    .img-left,
+    .img-right {
+        width: 100%;
+        height: auto;
+    }
+
+    /* About Us */
+    .about-us-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .about-us-container img {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .about-us-container h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .about-us-container p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+

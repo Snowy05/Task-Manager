@@ -10,7 +10,6 @@ $query = "SELECT * FROM Users WHERE Email='$email' AND PasswordHash='$hashed_pas
 $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) == 1) {
-    // Valid credentials, start session and redirect to profile page
     $user = mysqli_fetch_assoc($result);
     $_SESSION['logged_in'] = true;
     $_SESSION['user_id'] = $user['UserID'];

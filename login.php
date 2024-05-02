@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css" />
-    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 490px)"/>
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width : 620px)"/>
     <?php include 'importphp/menu.php'; ?>
 </head>
 <body>
-    <div class='cred-wrapper'>
+    <div class='space-wrapper'>
+        <div class='cred-wrapper'>
             <h1>Login</h1>
     <div class="credential-container">
         <form action="login_process.php" method="post">
@@ -19,6 +20,8 @@
              </div>
         </form>
     </div>
+    </div>
+    
     </div>
     
 

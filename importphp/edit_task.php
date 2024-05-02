@@ -1,46 +1,101 @@
 <?php
 session_start();
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    // Redirect user to login page if not logged in
     header("Location: login.php");
     exit();
 }
 
-// Include database connection
 include 'database-connection.php';
 
-// Check if the edit_task button is clicked
 if (isset($_POST['edit_task'])) {
-    // Check if task_id is set in the POST request
     if (!isset($_POST['task_id'])) {
-        // Redirect back with an error message
         $_SESSION['task_error'] = "Task ID was not provided.";
         header("Location: ../manage.php");
         exit();
     }
 
-    // Get task ID from POST request
     $taskID = $_POST['task_id'];
 
-    // Fetch task details from database
     $stmt = $conn->prepare("SELECT * FROM Tasks WHERE TaskID = ?");
     $stmt->bind_param("i", $taskID);
     $stmt->execute();
     $result = $stmt->get_result();
     $task = $result->fetch_assoc();
 
-    // Check if task exists
     if (!$task) {
         $_SESSION['task_error'] = "Task not found.";
         header("Location: ../manage.php");
         exit();
     }
 
-    // Display form for editing task
-    // You can populate the form fields with task details here
-    // Example:
+  
     ?>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; 
+}
+
+h1 {
+    text-align: center;
+    color: #333; 
+    margin-top: 20px;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="date"] {
+    width: calc(100% - 22px); 
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+        </style>
+        <title>Edit Task</title>
+    </head>
+    <body>
     <form action="update_task.php" method="post">
         <input type="hidden" name="task_id" value="<?php echo $task['TaskID']; ?>">
         <label for="title">Title:</label>
@@ -58,9 +113,12 @@ if (isset($_POST['edit_task'])) {
         <button type="submit" name="update_task">Update Task</button>
     </form>
 
+    </body>
+
+    </html>
+
     <?php
 } else {
-    // If edit_task button is not clicked, redirect back to manage.php
     header("Location: ../manage.php");
     exit();
 }
